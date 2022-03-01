@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-27T23:12:13" hostname="LAPTOP-S0N4U567" time="3.023">
+<testsuite name="petstore.Pet" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-03-01T15:25:54" hostname="LAPTOP-S0N4U567" time="5.616">
   <properties/>
-  <testcase name="incluirPet" classname="petstore.Pet" time="3.023"/>
+  <testcase name="incluirPet" classname="petstore.Pet" time="2.825"/>
+  <testcase name="consultarPet" classname="petstore.Pet" time="1.008"/>
+  <testcase name="alterarPet" classname="petstore.Pet" time="0.878"/>
+  <testcase name="excluirPet" classname="petstore.Pet" time="0.889"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -15,12 +18,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 0,
+    "id": 19850813,
     "category": {
         "id": 1,
-        "name": "dog"
+        "name": "AX2345LORT"
     },
-    "name": "Jadenha",
+    "name": "Apollo",
     "photoUrls": [
         "string"
     ],
@@ -33,7 +36,7 @@ Body:
     "status": "available"
 }
 HTTP/1.1 200 OK
-Date: Sun, 27 Feb 2022 23:12:17 GMT
+Date: Tue, 01 Mar 2022 15:25:57 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -43,12 +46,12 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372000001087214,
+    "id": 19850813,
     "category": {
         "id": 1,
-        "name": "dog"
+        "name": "AX2345LORT"
     },
-    "name": "Jadenha",
+    "name": "Apollo",
     "photoUrls": [
         "string"
     ],
@@ -59,6 +62,132 @@ Server: Jetty(9.2.9.v20150224)
         }
     ],
     "status": "available"
+}
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/19850813
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 01 Mar 2022 15:25:59 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 19850813,
+    "category": {
+        "id": 1,
+        "name": "AX2345LORT"
+    },
+    "name": "Apollo",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 2022,
+            "name": "sta"
+        }
+    ],
+    "status": "available"
+}
+O token Ã© AX2345LORT
+Request method:	PUT
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 19850813,
+    "category": {
+        "id": 1,
+        "name": "AX2345LORT"
+    },
+    "name": "Apollo",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 2022,
+            "name": "sta"
+        }
+    ],
+    "status": "sold"
+}
+HTTP/1.1 200 OK
+Date: Tue, 01 Mar 2022 15:26:00 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 19850813,
+    "category": {
+        "id": 1,
+        "name": "AX2345LORT"
+    },
+    "name": "Apollo",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 2022,
+            "name": "sta"
+        }
+    ],
+    "status": "sold"
+}
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/pet/19850813
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 01 Mar 2022 15:26:01 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "19850813"
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
